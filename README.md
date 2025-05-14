@@ -44,7 +44,7 @@ Now, all you have to do is send a plain text e-mail to your Gmail account with a
 
 In the body of the e-mail you will include whatever commands you want to run.  **Note:** It is one command per line, blank lines are considered the end of command instructions, and anything below a blank line will be ignored.  (*Make sure your e-mail client is sending plain text for the body, or use shift+enter for each new line, as some mail clients will natively try to double space to look nice, or force a carriage return on word wrap.*)
 
-Example:
+Continuing the Example:
 
 Send e-mail to "script.kiddie@gmail.com" with a subject of "Command (library1475)".  The body of the e-mail is:
 
