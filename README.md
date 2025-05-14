@@ -22,7 +22,49 @@ To compile on Windows:
 
 `cargo build --release --target x86_64-pc-windows-gnu`
 
+### Getting Started:
+
+1. Follow this article for how to create an *App Password*: https://support.google.com/accounts/answer/185833?hl=en
+
+2. ~Enable *IMAP* on your Gmail account~ *Update*: As of January 2025, Google has enabled IMAP for all accounts
+
+3. Download the precompiled binaries or download the repo and compile it yourself.
+
+### So how does this all work now?
+
+If you've done everything correctly so far, and have Rusty Crow running on a device with your gmail account and *App Password*, you're ready to get started.  The main thing to remember is the identifier string you picked.
+
+Example:
+
+This was you starting up Rusty Crow via the BlackBird executable:
+
+`./blackbird --username script.kiddie@gmail.com --password howtizwqjnyzgbcr --time 15 --string "library1475"`
+
+Now, all you have to do is send a plain text e-mail to your Gmail account with a subject of "Command (Identifier)".
+
+In the body of the e-mail you will include whatever commands you want to rub.  **Note:** It is one command per line, blank lines are considered the end of command instructions, and anything below a blank line will be ignored.  (Make sure your e-mail client is sending plain text for the body, or use shift+enter between lines, as some mail clients will natively try to double space to look nice, or force a carriage return on word wrap.)
+
+Example:
+
+Send e-mail to "script.kiddie@gmail.com" with a subject of "Command (library1475".  The body of the e-mail is:
+
+```
+pwd
+ls -la
+cat /etc/passwd
+```
+
+Every 15 minutes the BlackBird client will check your Gmail account for new e-mail with commands.  When that interval triggers, it will execute the included commands and e-mail you the results including what command was sent, the response, and what it pulled from your original e-mail.
+
 ### Notes & Background:
+
+- **Q:** What if I don't want to use Gmail and have my own IMAP server?
+
+- **A:** Then it's up to you to configure things to use your server.  I've annotated the code with call outs for where to replace items for your own server.
+
+- **Q:** What if I don't want to pass credential information on the command line?
+
+- **A:** Wise decision.  I have annotated in the code the section to comment out to disable that configuration and the section to uncomment to hard code your credentials.  You will then need to compile the binary for either Windows or Linux.
 
 - **Q:** Why "Rusty Crow"?
 
