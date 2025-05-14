@@ -46,7 +46,7 @@ In the body of the e-mail you will include whatever commands you want to run.  *
 
 <ins>Continuing the Example:</ins>
 
-Send e-mail to "script.kiddie@gmail.com" with a subject of "Command (library1475)".  The body of the e-mail is:
+Send e-mail to "*script.kiddie@gmail.com*" with a subject of "*Command (library1475)*".  The *body* of the e-mail is:
 
 ```
 pwd
