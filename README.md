@@ -1,10 +1,7 @@
-# rusty-crow
-Remote control of Windows and Linux via IMAP.
+# Rusty Crow
+## Remote control of Windows and Linux via IMAP.
 
-cargo build --release
-
-cargo build --release --target x86_64-pc-windows-gnu
-
+```
 USAGE:
     blackbird --username <username> --password <password> --time <time> --string <string>
 
@@ -15,3 +12,10 @@ OPTIONS:
     -t, --time <time>            Time interval to check email (in minutes)
     -u, --username <username>    E-mail username
     -V, --version                Print version information
+```
+
+To compile on Linux:
+`cargo build --release`
+
+To compile on Windows:
+`cargo build --release --target x86_64-pc-windows-gnu`
