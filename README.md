@@ -36,7 +36,7 @@ If you've done everything correctly so far, and have Rusty Crow running on a dev
 
 Example:
 
-This was how you started up Rusty Crow via the BlackBird executable:
+If this was how you started up Rusty Crow via the BlackBird executable:
 
 `./blackbird --username script.kiddie@gmail.com --password howtizwqjnyzgbcr --time 15 --string "library1475"`
 
