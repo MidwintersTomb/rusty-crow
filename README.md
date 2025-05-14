@@ -14,11 +14,11 @@ OPTIONS:
     -V, --version                Print version information
 ```
 
-To compile on Linux:
+To compile for Linux on Linux:
 
 `cargo build --release`
 
-To compile on Windows:
+To compile for Windows on Linux:
 
 `cargo build --release --target x86_64-pc-windows-gnu`
 
