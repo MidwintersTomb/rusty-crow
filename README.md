@@ -76,7 +76,7 @@ Every 15 minutes the BlackBird client will check your Gmail account for new e-ma
 
 - **Q:** What's to keep this from being easily spotted?
 
-- **A:** Would you think IMAP connecting to Gmail (or another mail provider) on a regular interval looks suspicious in network traffic?  Additionally, it will act as a command line mail client in that any e-mails that aren't *command* e-mails or replies to them will be written out to the command line in very basic fashion.  It kind of half assess the part.
+- **A:** Would you think IMAP connecting to Gmail (or another mail provider) on a regular interval looks suspicious in network traffic?  Additionally, as it claims in the `--help`, it will act as a command line mail client in that any e-mails that aren't *command* e-mails or replies to them will be written out to the command line in very basic fashion.  It kind of half assess the part of being a very basic mail client.
 
 - **Q:** Oh hey, this seems like I could use this for nefarious purposes... can I?
 
