@@ -54,7 +54,7 @@ ls -la
 cat /etc/passwd
 ```
 
-Every 15 minutes the BlackBird client will check your Gmail account for new e-mail with commands.  When that interval triggers, it will execute the included commands and e-mail you the results including what command was sent, the response, and what it pulled from your original e-mail.
+Every 15 minutes the BlackBird client will check your Gmail account for new e-mail with commands.  When that interval triggers, it will execute the included commands included in the body and e-mail you the results including what command was sent, the response, and what it pulled from your original e-mail.
 
 ### Notes & Background:
 
